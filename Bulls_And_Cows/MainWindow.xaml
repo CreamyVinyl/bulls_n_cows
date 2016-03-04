@@ -4,9 +4,9 @@
         Title="MainWindow" Height="593" Width="638" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     
     <Grid>
-        <Button  Content="Новая игра" HorizontalAlignment="Left" Margin="182,142,0,0" VerticalAlignment="Top" Width="270" Height="71" FontFamily="Verdana" FontSize="22" FontWeight="Bold"/>
+        <Button  Content="Новая игра" HorizontalAlignment="Left" Margin="182,142,0,0" VerticalAlignment="Top" Width="270" Height="71" FontFamily="Verdana" FontSize="22" FontWeight="Bold" Click="Button_Click_1"/>
         <Button Content="Правила" HorizontalAlignment="Left" Margin="182,268,0,0" VerticalAlignment="Top" Width="270" Height="71" FontFamily="Verdana" FontWeight="Bold" FontSize="22" Click="Button_Click"/>
-        <Button Content="Рекорды" HorizontalAlignment="Left" Margin="182,393,0,0" VerticalAlignment="Top" Width="270" Height="71" FontFamily="Verdana" FontSize="22" FontWeight="Bold"/>
+        <Button Content="Рекорды" HorizontalAlignment="Left" Margin="182,393,0,0" VerticalAlignment="Top" Width="270" Height="71" FontFamily="Verdana" FontSize="22" FontWeight="Bold" Click="Button_Click_2"/>
 
     </Grid>
 </Window>

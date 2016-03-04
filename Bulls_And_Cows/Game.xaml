@@ -3,6 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Game" Height="593" Width="638" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="26,245,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="296" Width="314"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="26,171,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="314"/>
+        <Button Content="Проверить" HorizontalAlignment="Left" Margin="380,171,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
