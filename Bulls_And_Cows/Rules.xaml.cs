@@ -10,27 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Bulls_And_Cows
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Interaction logic for Rules.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Rules : Window
     {
-        public MainWindow()
+        public Rules()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Collapsed;
-            Rules rulepage = new Rules();
-            rulepage.ShowDialog();
-            this.Visibility = Visibility.Visible; 
+            this.Close(); 
         }
     }
 }
