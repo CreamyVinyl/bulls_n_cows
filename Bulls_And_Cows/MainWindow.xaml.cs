@@ -36,10 +36,10 @@ namespace Bulls_And_Cows
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
-            //this.Visibility = Visibility.Collapsed;
-            //Game gamepage = new Game();
-            //gamepage.ShowDialog();
-            //this.Visibility = Visibility.Visible; 
+            this.Visibility = Visibility.Collapsed;
+            Letters letterpage = new Letters();
+            letterpage.ShowDialog();
+            this.Visibility = Visibility.Visible; 
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

@@ -3,9 +3,43 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Game" Height="593" Width="638" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="26,245,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="296" Width="314"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="26,171,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="314"/>
-        <Button Content="Проверить" HorizontalAlignment="Left" Margin="380,171,0,0" VerticalAlignment="Top" Width="75"/>
-
+        <TextBlock HorizontalAlignment="Left" Margin="26,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="330" Width="260" TextAlignment="Right"><InlineUIContainer>
+    			<Border BorderThickness="1" BorderBrush="Black" Height="330" Width="260"/>
+    		</InlineUIContainer></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="26,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+        <Button Content="Проверить" HorizontalAlignment="Left" Margin="211,142,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="А" HorizontalAlignment="Left" Margin="320,190,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Б" HorizontalAlignment="Left" Margin="370,190,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="В" HorizontalAlignment="Left" Margin="420,190,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Г" HorizontalAlignment="Left" Margin="470,190,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Д" HorizontalAlignment="Left" Margin="520,190,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Е" HorizontalAlignment="Left" Margin="570,190,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Ж" HorizontalAlignment="Left" Margin="320,240,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="З" HorizontalAlignment="Left" Margin="370,240,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="И" HorizontalAlignment="Left" Margin="420,240,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Й" HorizontalAlignment="Left" Margin="470,240,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="К" HorizontalAlignment="Left" Margin="520,240,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Л" HorizontalAlignment="Left" Margin="570,240,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="М" HorizontalAlignment="Left" Margin="320,290,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Н" HorizontalAlignment="Left" Margin="370,290,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="О" HorizontalAlignment="Left" Margin="420,290,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="П" HorizontalAlignment="Left" Margin="470,290,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Р" HorizontalAlignment="Left" Margin="520,290,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="С" HorizontalAlignment="Left" Margin="570,290,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Т" HorizontalAlignment="Left" Margin="320,340,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="У" HorizontalAlignment="Left" Margin="370,340,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Ф" HorizontalAlignment="Left" Margin="420,340,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Х" HorizontalAlignment="Left" Margin="470,340,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Ц" HorizontalAlignment="Left" Margin="520,340,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Ч" HorizontalAlignment="Left" Margin="570,340,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Ш" HorizontalAlignment="Left" Margin="320,390,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Щ" HorizontalAlignment="Left" Margin="370,390,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Ъ" HorizontalAlignment="Left" Margin="420,390,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Ы" HorizontalAlignment="Left" Margin="470,390,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Ь" HorizontalAlignment="Left" Margin="520,390,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Э" HorizontalAlignment="Left" Margin="570,390,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Ю" HorizontalAlignment="Left" Margin="420,440,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button Content="Я" HorizontalAlignment="Left" Margin="470,440,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="320,504,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="288" Height="50"/>
     </Grid>
 </Window>
