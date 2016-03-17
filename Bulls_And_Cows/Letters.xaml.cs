@@ -38,7 +38,7 @@ namespace Bulls_And_Cows
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            length = ComboBox.SelectedItemProperty.ToString();
+            length = ComboBox_Length.SelectedItem.ToString();
             if (length == "Случайно")
             {
                 Random rand = new Random();

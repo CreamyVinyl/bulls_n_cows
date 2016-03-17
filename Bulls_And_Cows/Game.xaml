@@ -3,9 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Game" Height="593" Width="638" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="26,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="330" Width="260" TextAlignment="Right"><InlineUIContainer>
-    			<Border BorderThickness="1" BorderBrush="Black" Height="330" Width="260"/>
-    		</InlineUIContainer></TextBlock>
         <TextBox x:Name="TextBox_WordInput" HorizontalAlignment="Left" Height="23" Margin="26,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="TextBox_TextChanged"/>
         <Button x:Name="Button_Check" Content="Проверить" HorizontalAlignment="Left" Margin="211,142,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button x:Name="Button_А" Content="А" HorizontalAlignment="Left" Margin="320,190,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
@@ -41,5 +38,17 @@
         <Button Content="Ю" HorizontalAlignment="Left" Margin="420,440,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
         <Button Content="Я" HorizontalAlignment="Left" Margin="470,440,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
         <TextBlock HorizontalAlignment="Left" Margin="320,504,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="288" Height="50"/>
+        <ListView HorizontalAlignment="Left" Height="333" Margin="26,190,0,0" VerticalAlignment="Top" Width="260" Grid.Column="3">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Номер}" Header="№" Width="25"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Слово}" Header="Слово" Width="130"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Быки}" Header="Быки" Width="50"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Коровы}" Header="Коровы" Width="50"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="370,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <TextBlock HorizontalAlignment="Left" Margin="347,129,0,0" TextWrapping="Wrap" Text="ЧЕРНОВИК" VerticalAlignment="Top" Width="226" TextAlignment="Center" FontFamily="Verdana" FontSize="14"/>
     </Grid>
 </Window>
