@@ -19,9 +19,24 @@ namespace Bulls_And_Cows
     /// </summary>
     public partial class Game : Window
     {
+        public string wordattempt;
         public Game()
         {
             InitializeComponent();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            wordattempt = TextBox.TextProperty.ToString();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //while (wordattempt.Length == int.Parse(Letters.length))
+            {
+                // IS ENABLED !!!
+            }
+            //TextBox.Text = String.Empty;
         }
     }
 }

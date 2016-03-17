@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace Bulls_And_Cows
     /// </summary>
     public partial class Letters : Window
     {
+        public static string length;
         public Letters()
         {
             InitializeComponent();
@@ -26,16 +28,24 @@ namespace Bulls_And_Cows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //this.Visibility = Visibility.Collapsed;
+            // IS ENABLED!!
+            
             this.Close();
             Game gamepage = new Game();
             gamepage.ShowDialog();
-            //this.Visibility = Visibility.Visible;
+            
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string length = ComboBox.SelectedItemProperty.ToString();
+            length = ComboBox.SelectedItemProperty.ToString();
+            if (length == "Случайно")
+            {
+                Random rand = new Random();
+                length = rand.Next(3, 11).ToString();
+            }
         }
+
+        
     }
 }
