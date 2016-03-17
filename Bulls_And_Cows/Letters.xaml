@@ -23,7 +23,7 @@
             <ComboBoxItem Content="10"/>
             <ComboBoxItem Content="Случайно"/>
         </ComboBox>
-        <Button Content="Начать игру" HorizontalAlignment="Left" Margin="253,213,0,0" VerticalAlignment="Top" Width="124" FontFamily="Verdana" FontSize="16" Height="34" Click="Button_Click"/>
+        <Button x:Name="Button_StartGame" Content="Начать игру" HorizontalAlignment="Left" Margin="253,213,0,0" VerticalAlignment="Top" Width="124" FontFamily="Verdana" FontSize="16" Height="34" Click="Button_Click"/>
 
     </Grid>
 </Window>

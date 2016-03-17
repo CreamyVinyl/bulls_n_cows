@@ -34,9 +34,9 @@ namespace Bulls_And_Cows
         {
             //while (wordattempt.Length == int.Parse(Letters.length))
             {
-                // IS ENABLED !!!
+                // IS ENABLED !!! ввести событие text_ischanged
             }
-            //TextBox.Text = String.Empty;
+            TextBox_WordInput.Text = "";
         }
     }
 }

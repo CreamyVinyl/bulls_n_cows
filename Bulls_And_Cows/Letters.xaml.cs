@@ -28,7 +28,7 @@ namespace Bulls_And_Cows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            // IS ENABLED!!
+            // IS ENABLED!! 
             
             this.Close();
             Game gamepage = new Game();
