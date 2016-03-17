@@ -25,17 +25,18 @@ namespace Bulls_And_Cows
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void TextBox_WordInput_TextChanged(object sender, TextChangedEventArgs e)
         {
-            wordattempt = TextBox.TextProperty.ToString();
+            wordattempt = TextBox_WordInput.Text;
+
+            if (TextBox_WordInput.Text.Length == int.Parse(Letters.length)) // ОШИБКА ТУТ
+            {
+                Button_Check.IsEnabled = true;
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //while (wordattempt.Length == int.Parse(Letters.length))
-            {
-                // IS ENABLED !!! ввести событие text_ischanged
-            }
             TextBox_WordInput.Text = "";
         }
     }

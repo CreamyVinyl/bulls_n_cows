@@ -4,7 +4,7 @@
         Title="Letters" Height="299.999" Width="638">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="77,122,0,0" TextWrapping="Wrap" Text="Выберите количество букв:" VerticalAlignment="Top" Height="31" Width="361" FontFamily="Verdana" FontSize="22"/>
-        <ComboBox x:Name="ComboBox_Length" HorizontalAlignment="Left" Margin="493,122,0,0" VerticalAlignment="Top" Width="69" Height="31" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBox x:Name="ComboBox_Length" HorizontalAlignment="Left" Margin="430,126,0,0" VerticalAlignment="Top" Width="85" Height="23" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -23,7 +23,7 @@
             <ComboBoxItem Content="10"/>
             <ComboBoxItem Content="Случайно"/>
         </ComboBox>
-        <Button x:Name="Button_StartGame" Content="Начать игру" HorizontalAlignment="Left" Margin="253,213,0,0" VerticalAlignment="Top" Width="124" FontFamily="Verdana" FontSize="16" Height="34" Click="Button_Click"/>
+        <Button x:Name="Button_StartGame" Content="Начать игру" HorizontalAlignment="Left" Margin="253,213,0,0" VerticalAlignment="Top" Width="124" FontFamily="Verdana" FontSize="16" Height="34" Click="Button_Click" IsEnabled="False"/>
 
     </Grid>
 </Window>

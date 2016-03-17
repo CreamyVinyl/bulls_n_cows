@@ -21,6 +21,7 @@ namespace Bulls_And_Cows
     public partial class Letters : Window
     {
         public static string length;
+        
         public Letters()
         {
             InitializeComponent();
@@ -28,24 +29,25 @@ namespace Bulls_And_Cows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            // IS ENABLED!! 
-            
             this.Close();
             Game gamepage = new Game();
             gamepage.ShowDialog();
-            
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (ComboBox_Length != null)
+            {
+                Button_StartGame.IsEnabled = true;
+            }
+
             length = ComboBox_Length.SelectedItem.ToString();
+
             if (length == "Случайно")
             {
                 Random rand = new Random();
                 length = rand.Next(3, 11).ToString();
             }
-        }
-
-        
+        }  
     }
 }
