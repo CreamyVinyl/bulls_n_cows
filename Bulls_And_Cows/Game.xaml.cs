@@ -29,9 +29,13 @@ namespace Bulls_And_Cows
         {
             wordattempt = TextBox_WordInput.Text;
 
-            if (TextBox_WordInput.Text.Length == int.Parse(Letters.length)) // ОШИБКА ТУТ
+            if (TextBox_WordInput.Text.Length == Letters.length)
             {
                 Button_Check.IsEnabled = true;
+            }
+            else
+            {
+                Button_Check.IsEnabled = false;
             }
         }
 
@@ -39,5 +43,27 @@ namespace Bulls_And_Cows
         {
             TextBox_WordInput.Text = "";
         }
+
+        //private void Button_А_Click(object sender, RoutedEventArgs e)
+        //{
+        //    while (Button_А.Background.ToString() == "#FFCDCDCD" || Button_А.Background.ToString() == "#FF008000" || Button_А.Background.ToString() == "#FFFF0000")
+        //    {
+        //        if (Button_А.Background.ToString() == "#FFCDCDCD")
+        //        {
+        //            Button_А.Background = Brushes.Red;
+        //            break;
+        //        }
+        //        if (Button_А.Background.ToString() == "#FFFF0000")
+        //        {
+        //            Button_А.Background = Brushes.Green;
+        //            break;
+        //        }
+        //        if (Button_А.Background.ToString() == "#FF008000")
+        //        {
+        //            Button_А.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFCDCDCD"));
+        //            break;
+        //        }
+        //    }
+        //}
     }
 }

@@ -18,10 +18,10 @@ namespace Bulls_And_Cows
     /// <summary>
     /// Логика взаимодействия для Letters.xaml
     /// </summary>
-    public partial class Letters : Window
+    public partial class Letters : Window // выровнять окно по центру
     {
-        public static string length;
-        
+        public static int length;
+
         public Letters()
         {
             InitializeComponent();
@@ -41,13 +41,16 @@ namespace Bulls_And_Cows
                 Button_StartGame.IsEnabled = true;
             }
 
-            length = ComboBox_Length.SelectedItem.ToString();
+            length = ComboBox_Length.SelectedIndex + 3;
 
-            if (length == "Случайно")
+            if (length == 11)
             {
                 Random rand = new Random();
-                length = rand.Next(3, 11).ToString();
+                length = rand.Next(3, 11);
+                int temp = length;
+                temp.ToString();
+                MessageBox.Show("Вам выпало слово длиной: " + temp);
             }
-        }  
+        }
     }
 }

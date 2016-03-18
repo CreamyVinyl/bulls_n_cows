@@ -5,7 +5,16 @@
     <Grid>
         <TextBox x:Name="TextBox_WordInput" HorizontalAlignment="Left" Height="23" Margin="26,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="TextBox_WordInput_TextChanged"/>
         <Button x:Name="Button_Check" Content="Проверить" HorizontalAlignment="Left" Margin="211,142,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" IsEnabled="False"/>
-        <Button x:Name="Button_А" Content="А" HorizontalAlignment="Left" Margin="320,190,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
+        <Button x:Name="Button_А" Content="А" HorizontalAlignment="Left" Margin="320,190,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="Button_А_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFCDCDCD" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
         <Button x:Name="Button_Б" Content="Б" HorizontalAlignment="Left" Margin="370,190,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
         <Button x:Name="Button_В" Content="В" HorizontalAlignment="Left" Margin="420,190,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
         <Button x:Name="Button_Г" Content="Г" HorizontalAlignment="Left" Margin="470,190,0,0" VerticalAlignment="Top" Width="25" Height="25"/>
