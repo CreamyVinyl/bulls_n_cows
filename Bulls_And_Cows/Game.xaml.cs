@@ -17,9 +17,22 @@ namespace Bulls_And_Cows
     /// <summary>
     /// Interaction logic for Game.xaml
     /// </summary>
+    public class ForListView
+    {
+        public int Номер { get; set; }
+
+        public string Слово { get; set; }
+
+        public int Быки { get; set; }
+
+        public int Коровы { get; set; }
+    }
+    
     public partial class Game : Window
     {
         public string wordattempt;
+        public int moves;
+
         public Game()
         {
             InitializeComponent();
@@ -41,14 +54,16 @@ namespace Bulls_And_Cows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            moves += 1;
+            ListView_BullsCows.Items.Add(new ForListView { Номер = moves, Слово = wordattempt, Быки = moves, Коровы = moves });
             TextBox_WordInput.Text = "";
         }
 
         private void Button_А_Click(object sender, RoutedEventArgs e)
         {
-            while (Button_А.Background.ToString() == "#FFDDDDDD" || Button_А.Background.ToString() == "#FF008000" || Button_А.Background.ToString() == "#FFFF0000")
+            while (Button_А.Background.ToString() == "#FFCDCDCD" || Button_А.Background.ToString() == "#FF008000" || Button_А.Background.ToString() == "#FFFF0000")
             {
-                if (Button_А.Background.ToString() == "#FFDDDDDD")
+                if (Button_А.Background.ToString() == "#FFCDCDCD")
                 {
                     Button_А.Background = Brushes.Red;
                     break;
@@ -60,7 +75,7 @@ namespace Bulls_And_Cows
                 }
                 if (Button_А.Background.ToString() == "#FF008000")
                 {
-                    Button_А.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFDDDDDD"));
+                    Button_А.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFCDCDCD"));
                     break;
                 }
             }
