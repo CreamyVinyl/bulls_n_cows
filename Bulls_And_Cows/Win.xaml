@@ -5,8 +5,8 @@
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="116,49,0,0" TextWrapping="Wrap" Text="Вы победили!" VerticalAlignment="Top" Width="422" Height="48" FontFamily="Verdana" FontSize="36" TextAlignment="Center" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Margin="32,150,0,0" TextWrapping="Wrap" Text="Введите свое имя: " VerticalAlignment="Top" Width="232" Height="36" FontFamily="Verdana" FontSize="20"/>
-        <TextBox x:Name="TextBox_Name" HorizontalAlignment="Left" Height="36" Margin="264,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="274"/>
-        <Button Content="ОК" HorizontalAlignment="Left" Margin="280,220,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="Button_Click"/>
+        <TextBox x:Name="TextBox_Name" HorizontalAlignment="Left" Height="36" Margin="264,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="274" TextChanged="TextBox_Name_TextChanged"/>
+        <Button x:Name="Button_OK" Content="ОК" HorizontalAlignment="Left" Margin="280,220,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="Button_Click" IsEnabled="False"/>
 
     </Grid>
 </Window>

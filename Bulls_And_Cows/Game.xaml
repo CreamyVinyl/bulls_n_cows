@@ -37,7 +37,7 @@
         <Button x:Name="Button_Э" Content="Э" HorizontalAlignment="Left" Margin="570,390,0,0" VerticalAlignment="Top" Width="25" Height="25" Background="#FFCDCDCD" Click="Button_Э_Click"/>
         <Button x:Name="Button_Ю" Content="Ю" HorizontalAlignment="Left" Margin="420,440,0,0" VerticalAlignment="Top" Width="25" Height="25" Background="#FFCDCDCD" Click="Button_Ю_Click"/>
         <Button x:Name="Button_Я" Content="Я" HorizontalAlignment="Left" Margin="470,440,0,0" VerticalAlignment="Top" Width="25" Height="25" Background="#FFCDCDCD" Click="Button_Я_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="320,504,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="288" Height="50"/>
+        <TextBlock HorizontalAlignment="Left" Margin="320,504,0,0" TextWrapping="Wrap" Text="Отметьте КРАСНЫМ буквы, которых нет в слове Отметьте ЗЕЛЕНЫМ буквы, которые есть в слове" VerticalAlignment="Top" Width="288" Height="50"/>
         <ListView x:Name="ListView_BullsCows" HorizontalAlignment="Left" Height="333" Margin="26,190,0,0" VerticalAlignment="Top" Width="260" Grid.Column="3">
             <ListView.View>
                 <GridView>

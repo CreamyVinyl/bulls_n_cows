@@ -37,5 +37,13 @@ namespace Bulls_And_Cows
             recordpage.ShowDialog();
             this.Close();
         }
+
+        private void TextBox_Name_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (TextBox_Name.Text.Length != 0)
+            {
+                Button_OK.IsEnabled = true;
+            }
+        }
     }
 }
