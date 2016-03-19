@@ -46,6 +46,7 @@ namespace Bulls_And_Cows
         {
             this.Visibility = Visibility.Collapsed;
             Records recordspage = new Records();
+            recordspage.RecordsShow();
             recordspage.ShowDialog();
             this.Visibility = Visibility.Visible; 
         }

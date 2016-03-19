@@ -4,14 +4,14 @@
         Title="Рекорды" Height="593" Width="638" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="10,507,0,0" VerticalAlignment="Top" Width="106" Height="41" FontFamily="Verdana" FontSize="16" Click="Button_Click"/>
-        <ListView HorizontalAlignment="Left" Height="348" Margin="66,142,0,0" VerticalAlignment="Top" Width="504">
+        <ListView x:Name="ListView_Records" HorizontalAlignment="Left" Height="348" Margin="66,142,0,0" VerticalAlignment="Top" Width="504">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Номер}" Header="Место" Width="50"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Слово}" Header="Имя" Width="150"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Быки}" Header="Кол-во ходов" Width="100"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Коровы}" Header="Слово" Width="100"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Коровы}" Header="Дата" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Место}" Header="Место" Width="50"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Имя}" Header="Имя" Width="150"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Ходы}" Header="Кол-во ходов" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Слово}" Header="Слово" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Дата}" Header="Дата" Width="100"/>
                 </GridView>
             </ListView.View>
         </ListView>

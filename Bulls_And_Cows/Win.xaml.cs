@@ -33,6 +33,7 @@ namespace Bulls_And_Cows
             sw.Close();
             fs.Close();
             Records recordpage = new Records();
+            recordpage.RecordsShow();
             recordpage.ShowDialog();
             this.Close();
         }
