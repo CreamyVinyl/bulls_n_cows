@@ -18,7 +18,7 @@ namespace Bulls_And_Cows
     /// <summary>
     /// Логика взаимодействия для Letters.xaml
     /// </summary>
-    public partial class Letters : Window 
+    public partial class Letters : Window
     {
         public static int length;
         public static string hiddenword;
@@ -32,6 +32,7 @@ namespace Bulls_And_Cows
         {
             this.Close();
             Game gamepage = new Game();
+            WordGenerator(length);
             gamepage.ShowDialog();
         }
 
@@ -53,5 +54,24 @@ namespace Bulls_And_Cows
                 MessageBox.Show("Вам выпало слово длиной: " + temp);
             }
         }
+
+            private void WordGenerator(int length)
+        {
+            List<string> neededwords = new List<string>();
+            string pathtofile = @"../../words.txt";
+            string[] allwords = File.ReadAllLines(pathtofile);
+
+            for (int i = 0; i < allwords.Length; i++)
+            {
+                if (allwords[i].Length == length)
+                {
+                    neededwords.Add(allwords[i]);
+                }
+            }
+            Random rand2 = new Random();
+            int temp2 = rand2.Next(0, neededwords.Count + 1);
+            hiddenword = neededwords.ElementAt(temp2);
+        }
+
     }
 }
