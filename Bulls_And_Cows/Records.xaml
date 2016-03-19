@@ -7,11 +7,11 @@
         <ListView x:Name="ListView_Records" HorizontalAlignment="Left" Height="348" Margin="66,142,0,0" VerticalAlignment="Top" Width="504">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Место}" Header="Место" Width="50"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Имя}" Header="Имя" Width="150"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Ходы}" Header="Кол-во ходов" Width="100"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Слово}" Header="Слово" Width="100"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Дата}" Header="Дата" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Место}" Header="Место" Width="46"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Имя}" Header="Имя" Width="169"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Ходы}" Header="Кол-во ходов" Width="85"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Слово}" Header="Слово" Width="125"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Дата}" Header="Дата" Width="69"/>
                 </GridView>
             </ListView.View>
         </ListView>

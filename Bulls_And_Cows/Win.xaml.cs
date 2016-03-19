@@ -37,12 +37,31 @@ namespace Bulls_And_Cows
             recordpage.ShowDialog();
             this.Close();
         }
-
+        protected override void OnPreviewKeyDown(KeyEventArgs e)
+        {
+            if (e.Key == Key.Space)
+            {
+                e.Handled = true;
+            }
+            base.OnPreviewKeyDown(e);
+        }
         private void TextBox_Name_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (TextBox_Name.Text.Length != 0)
             {
                 Button_OK.IsEnabled = true;
+            }
+            else
+            {
+                Button_OK.IsEnabled = false;
+            }
+        }
+
+        private void TextBox_Name_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter && TextBox_Name.Text.Length != 0)
+            {
+                Button_Click(sender, e);
             }
         }
     }
