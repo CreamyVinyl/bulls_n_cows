@@ -29,7 +29,7 @@ namespace Bulls_And_Cows
     /// </summary>
     public partial class Records : Window
     {
-        int place;
+        int place = 1;
         public Records()
         {
             InitializeComponent();
@@ -45,12 +45,30 @@ namespace Bulls_And_Cows
             FileStream fs = new FileStream("../../records.txt", FileMode.Open);
             StreamReader sr = new StreamReader(fs);
             string[] recArray = new string[5];
+            List<ForListViewRecords> RecordsList = new List<ForListViewRecords>();
             while (!sr.EndOfStream)
             {
-                place += 1;
                 string records = sr.ReadLine();
                 recArray = records.Split(new char[0], StringSplitOptions.RemoveEmptyEntries);
-                ListView_Records.Items.Add(new ForListViewRecords { Место = place, Имя = recArray[0], Ходы = recArray[1], Слово = recArray[2], Дата = recArray[3] });
+                RecordsList.Add(new ForListViewRecords { Место = place, Имя = recArray[0], Ходы = recArray[1], Слово = recArray[2], Дата = recArray[3] });
+            }
+            for (int i = 0; i < RecordsList.Count - 1; i++)
+            {
+                for (int j = i + 1; j < RecordsList.Count; j++)
+                {
+                    if (int.Parse(RecordsList[i].Ходы) > int.Parse(RecordsList[j].Ходы))
+                    {
+                        var temp = RecordsList[i];
+                        RecordsList[i] = RecordsList[j];
+                        RecordsList[j] = temp;
+                    }
+                    RecordsList[j].Место = place + 1;
+                }
+                place += 1;
+            }
+            foreach (ForListViewRecords forListViewRecords in RecordsList)
+            {
+                ListView_Records.Items.Add(forListViewRecords);
             }
         }
     }
