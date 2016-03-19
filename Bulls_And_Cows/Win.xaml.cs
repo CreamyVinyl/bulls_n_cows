@@ -23,5 +23,12 @@ namespace Bulls_And_Cows
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Records recordpage = new Records();
+            recordpage.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -63,10 +63,9 @@ namespace Bulls_And_Cows
             TextBox_WordInput.Focus();
         }
 
-        private void Analysis(string hiddenword, string wordattempt) // НУЖНО СДЕЛАТЬ ОКНО ДЛЯ ЗАВЕРШЕНИЯ ИГРЫ
+        private void Analysis(string hiddenword, string wordattempt)
         {
             wordattempt = wordattempt.ToLower();
-            string tempword = hiddenword;
 
             moves += 1;
             bulls = 0;
@@ -99,7 +98,12 @@ namespace Bulls_And_Cows
                 }
             }
 
-            hiddenword = tempword;
+            if (bulls == wordattempt.Length)
+            {
+                Win winpage = new Win();
+                winpage.ShowDialog();
+                this.Close();
+            }
         }
 
         private void ColorChange(Button A)
