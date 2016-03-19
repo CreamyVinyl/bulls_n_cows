@@ -32,6 +32,8 @@ namespace Bulls_And_Cows
     {
         public string wordattempt;
         public int moves;
+        public int bulls;
+        public int cows;
 
         public Game()
         {
@@ -54,9 +56,44 @@ namespace Bulls_And_Cows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            moves += 1;
-            ListView_BullsCows.Items.Add(new ForListView { Номер = moves, Слово = wordattempt, Быки = moves, Коровы = moves });
+            Analysis(Letters.hiddenword, wordattempt);
+            ListView_BullsCows.Items.Add(new ForListView { Номер = moves, Слово = wordattempt, Быки = bulls, Коровы = cows });
             TextBox_WordInput.Text = "";
+        }
+
+        private void Analysis (string hiddenword, string wordattempt) // НУЖНО СДЕЛАТЬ ОКНО ДЛЯ ЗАВЕРШЕНИЯ ИГРЫ
+        {
+            moves += 1;
+            char[] letters_word = hiddenword.ToCharArray();
+            char[] letters_attempt = wordattempt.ToCharArray();
+            int bulls = 0;
+            int cows = 0;
+
+            for (int i = 0; i < letters_word.Length; i++)
+            {
+                for (int j = 0; j < letters_attempt.Length; j++)
+                {
+                    if (i == j && letters_word[i] == letters_attempt[j])
+                    {
+                        bulls += 1;
+                        letters_attempt[j] = '0';
+                        break;
+                    } 
+                }
+            }
+
+            for (int i = 0; i < letters_word.Length; i++)
+            {
+                for (int j = 0; j < letters_attempt.Length; j++)
+                {
+                    if (i != j && letters_word[i] == letters_attempt[j])
+                    {
+                        cows += 1;
+                        letters_attempt[j] = '0';
+                        break;
+                    }
+                }
+            }
         }
 
         private void Button_А_Click(object sender, RoutedEventArgs e)

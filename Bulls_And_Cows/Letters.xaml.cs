@@ -21,6 +21,7 @@ namespace Bulls_And_Cows
     public partial class Letters : Window // выровнять окно по центру
     {
         public static int length;
+        public static string hiddenword;
 
         public Letters()
         {
