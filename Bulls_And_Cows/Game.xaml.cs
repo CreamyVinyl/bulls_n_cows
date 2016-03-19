@@ -40,6 +40,8 @@ namespace Bulls_And_Cows
 
         private void TextBox_WordInput_TextChanged(object sender, TextChangedEventArgs e)
         {
+            TextBox_WordInput.MaxLength = Letters.length;
+            
             wordattempt = TextBox_WordInput.Text;
 
             if (TextBox_WordInput.Text.Length == Letters.length)
@@ -60,9 +62,23 @@ namespace Bulls_And_Cows
             TextBox_WordInput.Focus();
         }
 
+        private void TextBox_WordInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter && TextBox_WordInput.Text.Length == Letters.length)
+            {
+                Button_Click(sender, e);
+            }
+        }
+
+        private void TextBox_Temporary_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox_Temporary.MaxLength = Letters.length;
+        }
+
         private void Analysis(string hiddenword, string wordattempt)
         {
             wordattempt = wordattempt.ToLower();
+            wordattempt = wordattempt.Replace('ё', 'е');
             
             moves += 1;
             bulls = 0;
@@ -283,11 +299,6 @@ namespace Bulls_And_Cows
         private void Button_Я_Click(object sender, RoutedEventArgs e)
         {
             ColorChange(Button_Я);
-        }
-
-        private void TextBox_Temporary_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            TextBox_Temporary.MaxLength = Letters.length;
         }
     }
 }

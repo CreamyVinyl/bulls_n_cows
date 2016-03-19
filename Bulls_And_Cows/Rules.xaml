@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Правила" Height="593" Width="638" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="351" Width="470" Margin="80,142,0,0" FontFamily="Verdana" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Целью игры Быки и Коровы является угадать загаданное слово. Для этого игроку необходимо вводить слова такой же длины. Приложение покажет количество быков(букв, находящихся на правильных позициях) и коров(букв, имеющихся в загаданном слове, но находящихся не на своем месте). Например, если было загадано слово КОРОВА, а игрок введет слово МОЛОКО, то игра выдаст результат в 2 быка (вторая и четвертая буквы угаданы верно) и 1 корова (буква К присутствует в слове, но не на своем месте). Несмотря на то, что в слове МОЛОКО есть еще одна буква О, которая есть в слове КОРОВА, она не будет считаться коровой, так как один символ из загаданного слова не может быть и быком и коровой одновременно. В приложении буква Ё равна букве Е. Для удобства в игре предусмотрен черновик для помощи в разгадывании слова, в который игрок может записывать промежуточные догадки." VerticalAlignment="Top" Height="351" Width="470" Margin="80,142,0,0" FontFamily="Verdana" FontSize="16"/>
         <Button  Content="Назад" HorizontalAlignment="Left" Margin="10,507,0,0" VerticalAlignment="Top" Width="106" Height="41" FontFamily="Verdana" FontSize="16" Click="Button_Click"/>
 
     </Grid>

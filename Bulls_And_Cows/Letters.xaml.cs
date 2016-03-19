@@ -35,7 +35,6 @@ namespace Bulls_And_Cows
             WordGenerator(length);
             Game.moves = 0;
             gamepage.ShowDialog();
-
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -70,10 +69,10 @@ namespace Bulls_And_Cows
                     neededwords.Add(allwords[i]);
                 }
             }
+
             Random rand2 = new Random();
             int temp2 = rand2.Next(0, neededwords.Count + 1);
             hiddenword = neededwords.ElementAt(temp2);
         }
-
     }
 }

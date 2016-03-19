@@ -35,7 +35,6 @@ namespace Bulls_And_Cows
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
             this.Visibility = Visibility.Collapsed;
             Letters letterpage = new Letters();
             letterpage.ShowDialog();
