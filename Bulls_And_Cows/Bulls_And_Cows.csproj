@@ -65,6 +65,9 @@
     <Compile Include="Rules.xaml.cs">
       <DependentUpon>Rules.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Win.xaml.cs">
+      <DependentUpon>Win.xaml</DependentUpon>
+    </Compile>
     <Page Include="Game.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,6 +93,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Rules.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

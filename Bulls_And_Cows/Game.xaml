@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Bulls_And_Cows.Game"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Game" Height="593" Width="638" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Быки и коровы" Height="593" Width="638" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <TextBox x:Name="TextBox_WordInput" HorizontalAlignment="Left" Height="23" Margin="26,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="TextBox_WordInput_TextChanged"/>
         <Button x:Name="Button_Check" Content="Проверить" HorizontalAlignment="Left" Margin="211,142,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" IsEnabled="False"/>
@@ -42,13 +42,13 @@
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Номер}" Header="№" Width="25"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Слово}" Header="Слово" Width="130"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Слово}" Header="Слово" Width="108"/>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Быки}" Header="Быки" Width="50"/>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Коровы}" Header="Коровы" Width="50"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBox x:Name="TextBox_Temporary" HorizontalAlignment="Left" Height="23" Margin="370,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="TextBox_Temporary" HorizontalAlignment="Left" Height="23" Margin="370,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" TextChanged="TextBox_Temporary_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="347,129,0,0" TextWrapping="Wrap" Text="ЧЕРНОВИК" VerticalAlignment="Top" Width="226" TextAlignment="Center" FontFamily="Verdana" FontSize="14"/>
     </Grid>
 </Window>

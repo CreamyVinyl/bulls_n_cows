@@ -283,5 +283,10 @@ namespace Bulls_And_Cows
         {
             ColorChange(Button_Я);
         }
+
+        private void TextBox_Temporary_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox_Temporary.MaxLength = Letters.length;
+        }
     }
 }
