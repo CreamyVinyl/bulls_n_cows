@@ -20,11 +20,8 @@ namespace Bulls_And_Cows
     public class ForListView
     {
         public int Номер { get; set; }
-
         public string Слово { get; set; }
-
         public int Быки { get; set; }
-
         public int Коровы { get; set; }
     }
 

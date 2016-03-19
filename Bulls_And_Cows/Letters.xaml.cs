@@ -55,7 +55,7 @@ namespace Bulls_And_Cows
             }
         }
 
-            private void WordGenerator(int length)
+        private void WordGenerator(int length)
         {
             List<string> neededwords = new List<string>();
             string pathtofile = @"../../words.txt";
