@@ -63,11 +63,15 @@ namespace Bulls_And_Cows
 
         private void Analysis (string hiddenword, string wordattempt) // НУЖНО СДЕЛАТЬ ОКНО ДЛЯ ЗАВЕРШЕНИЯ ИГРЫ
         {
+            wordattempt = wordattempt.ToLower();
+            string tempword = hiddenword;
+
             moves += 1;
-            char[] letters_word = hiddenword.ToCharArray();
+            bulls = 0;
+            cows = 0;
+            char[] letters_word = Letters.hiddenword.ToCharArray();
             char[] letters_attempt = wordattempt.ToCharArray();
-            int bulls = 0;
-            int cows = 0;
+            
 
             for (int i = 0; i < letters_word.Length; i++)
             {
@@ -76,8 +80,7 @@ namespace Bulls_And_Cows
                     if (i == j && letters_word[i] == letters_attempt[j])
                     {
                         bulls += 1;
-                        letters_attempt[j] = '0';
-                        break;
+                        letters_word[i] = '0';
                     } 
                 }
             }
@@ -89,11 +92,12 @@ namespace Bulls_And_Cows
                     if (i != j && letters_word[i] == letters_attempt[j])
                     {
                         cows += 1;
-                        letters_attempt[j] = '0';
-                        break;
+                        letters_word[i] = '0';
                     }
                 }
             }
+
+            hiddenword = tempword;
         }
 
         private void Button_А_Click(object sender, RoutedEventArgs e)
