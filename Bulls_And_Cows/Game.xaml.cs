@@ -28,7 +28,7 @@ namespace Bulls_And_Cows
     public partial class Game : Window
     {
         public string wordattempt;
-        public int moves;
+        public static int moves;
         public int bulls;
         public int cows;
 
@@ -63,7 +63,7 @@ namespace Bulls_And_Cows
         private void Analysis(string hiddenword, string wordattempt)
         {
             wordattempt = wordattempt.ToLower();
-
+            
             moves += 1;
             bulls = 0;
             cows = 0;

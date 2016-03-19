@@ -33,7 +33,9 @@ namespace Bulls_And_Cows
             this.Close();
             Game gamepage = new Game();
             WordGenerator(length);
+            Game.moves = 0;
             gamepage.ShowDialog();
+
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

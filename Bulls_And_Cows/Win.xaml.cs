@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,8 @@ namespace Bulls_And_Cows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string[] info = { TextBox_Name.Text, (Game.moves).ToString(), Letters.hiddenword, (DateTime.Now).ToString() };
+            File.WriteAllLines("../../records.txt", info);
             Records recordpage = new Records();
             recordpage.ShowDialog();
             this.Close();
