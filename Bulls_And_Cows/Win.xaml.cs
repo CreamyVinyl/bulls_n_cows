@@ -27,8 +27,11 @@ namespace Bulls_And_Cows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string[] info = { TextBox_Name.Text, (Game.moves).ToString(), Letters.hiddenword, (DateTime.Now).ToString() };
-            File.WriteAllLines("../../records.txt", info);
+            FileStream fs = new FileStream("../../records.txt", FileMode.Append);
+            StreamWriter sw = new StreamWriter(fs);
+            sw.WriteLine("{0} {1} {2} {3}", TextBox_Name.Text, Game.moves, Letters.hiddenword, DateTime.Now);
+            sw.Close();
+            fs.Close();
             Records recordpage = new Records();
             recordpage.ShowDialog();
             this.Close();
