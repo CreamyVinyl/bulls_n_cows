@@ -18,7 +18,7 @@ namespace Bulls_And_Cows
     /// <summary>
     /// Логика взаимодействия для Letters.xaml
     /// </summary>
-    public partial class Letters : Window // выровнять окно по центру
+    public partial class Letters : Window 
     {
         public static int length;
         public static string hiddenword;
