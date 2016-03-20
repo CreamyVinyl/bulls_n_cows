@@ -121,9 +121,9 @@ namespace Bulls_And_Cows
 
         private void ColorChange(Button A)
         {
-            while (A.Background.ToString() == "#FFCDCDCD" || A.Background.ToString() == "#FF008000" || A.Background.ToString() == "#FFFF0000")
+            while (A.Background.ToString() == "#FFF5E7CD" || A.Background.ToString() == "#FF008000" || A.Background.ToString() == "#FFFF0000")
             {
-                if (A.Background.ToString() == "#FFCDCDCD")
+                if (A.Background.ToString() == "#FFF5E7CD")
                 {
                     A.Background = Brushes.Red;
                     break;
@@ -135,7 +135,7 @@ namespace Bulls_And_Cows
                 }
                 if (A.Background.ToString() == "#FF008000")
                 {
-                    A.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFCDCDCD"));
+                    A.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FFF5E7CD"));
                     break;
                 }
             }

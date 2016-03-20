@@ -2,11 +2,13 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Быки и коровы" Height="593" Width="638" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    
+    <Window.Background>
+        <ImageBrush ImageSource="images/Mainwindow.jpg">
+        </ImageBrush>
+    </Window.Background>
     <Grid>
-        <Button  Content="Новая игра" HorizontalAlignment="Left" Margin="182,142,0,0" VerticalAlignment="Top" Width="270" Height="71" FontFamily="Verdana" FontSize="22" FontWeight="Bold" Click="Button_Click_1"/>
-        <Button Content="Правила" HorizontalAlignment="Left" Margin="182,268,0,0" VerticalAlignment="Top" Width="270" Height="71" FontFamily="Verdana" FontWeight="Bold" FontSize="22" Click="Button_Click"/>
-        <Button Content="Рекорды" HorizontalAlignment="Left" Margin="182,393,0,0" VerticalAlignment="Top" Width="270" Height="71" FontFamily="Verdana" FontSize="22" FontWeight="Bold" Click="Button_Click_2"/>
-
+        <Button  Content="Новая игра" HorizontalAlignment="Left" Margin="184,180,0,0" VerticalAlignment="Top" Width="270" Height="70" FontFamily="Verdana" FontSize="22" FontWeight="Bold" Click="Button_Click_1" Background="#FFF5E7CD"/>
+        <Button Content="Правила" HorizontalAlignment="Left" Margin="184,305,0,0" VerticalAlignment="Top" Width="270" Height="70" FontFamily="Verdana" FontWeight="Bold" FontSize="22" Click="Button_Click" Background="#FFF5E7CD"/>
+        <Button Content="Рекорды" HorizontalAlignment="Left" Margin="184,430,0,0" VerticalAlignment="Top" Width="270" Height="70" FontFamily="Verdana" FontSize="22" FontWeight="Bold" Click="Button_Click_2" Background="#FFF5E7CD"/>
     </Grid>
 </Window>

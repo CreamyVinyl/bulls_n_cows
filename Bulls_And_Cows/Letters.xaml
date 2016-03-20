@@ -2,17 +2,12 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Новая игра" Height="300" Width="638" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="images/LettersWindow.jpg"/>
+    </Window.Background>
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="77,142,0,0" TextWrapping="Wrap" Text="Выберите количество букв:" VerticalAlignment="Top" Height="31" Width="361" FontFamily="Verdana" FontSize="22"/>
         <ComboBox x:Name="ComboBox_Length" HorizontalAlignment="Left" Margin="430,147,0,0" VerticalAlignment="Top" Width="85" Height="23" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.649"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </ComboBox.RenderTransform>
             <ComboBoxItem Content="3"/>
             <ComboBoxItem Content="4"/>
             <ComboBoxItem Content="5"/>
@@ -23,7 +18,7 @@
             <ComboBoxItem Content="10"/>
             <ComboBoxItem Content="Случайно"/>
         </ComboBox>
-        <Button x:Name="Button_StartGame" Content="Начать игру" HorizontalAlignment="Left" Margin="253,213,0,0" VerticalAlignment="Top" Width="124" FontFamily="Verdana" FontSize="16" Height="34" Click="Button_Click" IsEnabled="False"/>
+        <Button x:Name="Button_StartGame" Content="Начать игру" HorizontalAlignment="Left" Margin="253,213,0,0" VerticalAlignment="Top" Width="124" FontFamily="Verdana" FontSize="16" Height="34" Click="Button_Click" IsEnabled="False" Background="#FFF5E7CD"/>
 
     </Grid>
 </Window>
