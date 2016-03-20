@@ -54,5 +54,6 @@
         </ListView>
         <TextBox x:Name="TextBox_Temporary" HorizontalAlignment="Left" Height="23" Margin="370,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" TextChanged="TextBox_Temporary_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="347,129,0,0" TextWrapping="Wrap" Text="ЧЕРНОВИК" VerticalAlignment="Top" Width="226" TextAlignment="Center" FontFamily="Verdana" FontSize="14"/>
+        <Button x:Name="Button_GiveUp" Content="Cдаться" HorizontalAlignment="Left" Height="23" Margin="121,525,0,0" VerticalAlignment="Top" Width="75" Background="#FFF5E7CD" Click="Button_GiveUp_Click"/>
     </Grid>
 </Window>

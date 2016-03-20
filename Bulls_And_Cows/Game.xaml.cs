@@ -298,5 +298,11 @@ namespace Bulls_And_Cows
         {
             ColorChange(Button_Я);
         }
+
+        private void Button_GiveUp_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Вы проиграли!" + "\n" + "Загаданное слово: " + Letters.hiddenword);
+            this.Close();
+        }
     }
 }
