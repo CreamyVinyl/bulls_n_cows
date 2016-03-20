@@ -107,8 +107,8 @@ namespace Bulls_And_Cows
             if (bulls == wordattempt.Length)
             {
                 Win winpage = new Win();
-                winpage.ShowDialog();
                 this.Close();
+                winpage.ShowDialog();
             }
         }
 
