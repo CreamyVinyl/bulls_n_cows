@@ -130,6 +130,11 @@ namespace Bulls_And_Cows
                 }
                 if (A.Background.ToString() == "#FFFF0000")
                 {
+                    A.Background = Brushes.Yellow;
+                    break;
+                }
+                if (A.Background.ToString() == "#FFFFFF00")
+                {
                     A.Background = Brushes.Green;
                     break;
                 }

@@ -23,6 +23,7 @@ namespace Bulls_And_Cows
         public Win()
         {
             InitializeComponent();
+            TextBox_Name.Focus();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
