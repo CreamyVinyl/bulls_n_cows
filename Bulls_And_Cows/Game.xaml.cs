@@ -17,13 +17,6 @@ namespace Bulls_And_Cows
     /// <summary>
     /// Interaction logic for Game.xaml
     /// </summary>
-    public class ForListView
-    {
-        public int Номер { get; set; }
-        public string Слово { get; set; }
-        public int Быки { get; set; }
-        public int Коровы { get; set; }
-    }
 
     public partial class Game : Window
     {
@@ -57,7 +50,7 @@ namespace Bulls_And_Cows
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Analysis(Letters.hiddenword, wordattempt);
-            ListView_BullsCows.Items.Add(new ForListView { Номер = moves, Слово = wordattempt, Быки = bulls, Коровы = cows });
+            ListView_BullsCows.Items.Add(new ForListViewGame { Номер = moves, Слово = wordattempt, Быки = bulls, Коровы = cows });
             TextBox_WordInput.Text = "";
             TextBox_WordInput.Focus();
         }
@@ -114,14 +107,14 @@ namespace Bulls_And_Cows
             if (bulls == wordattempt.Length)
             {
                 Win winpage = new Win();
-                winpage.ShowDialog();
                 this.Close();
+                winpage.ShowDialog();
             }
         }
 
         private void ColorChange(Button A)
         {
-            while (A.Background.ToString() == "#FFF5E7CD" || A.Background.ToString() == "#FF008000" || A.Background.ToString() == "#FFFF0000")
+            while (A.Background.ToString() == "#FFF5E7CD" || A.Background.ToString() == "#FF008000" || A.Background.ToString() == "#FFFF0000" || A.Background.ToString() == "#FFFFFF00")
             {
                 if (A.Background.ToString() == "#FFF5E7CD")
                 {
@@ -304,6 +297,12 @@ namespace Bulls_And_Cows
         private void Button_Я_Click(object sender, RoutedEventArgs e)
         {
             ColorChange(Button_Я);
+        }
+
+        private void Button_GiveUp_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Вы проиграли!" + "\n" + "Загаданное слово: " + Letters.hiddenword, "Проигрыш");
+            this.Close();
         }
     }
 }

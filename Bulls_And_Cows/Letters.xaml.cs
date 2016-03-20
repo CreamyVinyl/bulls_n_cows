@@ -52,7 +52,7 @@ namespace Bulls_And_Cows
                 length = rand.Next(3, 11);
                 int temp = length;
                 temp.ToString();
-                MessageBox.Show("Вам выпало слово длиной: " + temp);
+                MessageBox.Show("Вам выпало слово длиной: " + temp, "Длина слова");
             }
         }
 

@@ -4,11 +4,5 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
-        <ControlTemplate x:Key="RoundRectangleButtonTemplate" TargetType="{x:Type Button}">
-            <Grid x:Name="controlLayout">
-                <Rectangle Fill="#FFF5E7CD" RadiusX="15" RadiusY="15" Stroke="#7F000000"/>
-            </Grid>
-        </ControlTemplate>
-
     </Application.Resources>
 </Application>

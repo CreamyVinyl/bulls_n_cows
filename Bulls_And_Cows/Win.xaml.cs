@@ -33,10 +33,10 @@ namespace Bulls_And_Cows
             sw.WriteLine("{0} {1} {2} {3}", TextBox_Name.Text, Game.moves, Letters.hiddenword, DateTime.Now);
             sw.Close();
             fs.Close();
+            this.Close();
             Records recordpage = new Records();
             recordpage.RecordsShow();
             recordpage.ShowDialog();
-            this.Close();
         }
         protected override void OnPreviewKeyDown(KeyEventArgs e)
         {
