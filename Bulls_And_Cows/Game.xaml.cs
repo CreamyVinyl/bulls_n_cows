@@ -301,7 +301,7 @@ namespace Bulls_And_Cows
 
         private void Button_GiveUp_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Вы проиграли!" + "\n" + "Загаданное слово: " + Letters.hiddenword);
+            MessageBox.Show("Вы проиграли!" + "\n" + "Загаданное слово: " + Letters.hiddenword, "Проигрыш");
             this.Close();
         }
     }
