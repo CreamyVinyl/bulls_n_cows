@@ -16,14 +16,6 @@ using System.Windows.Shapes;
 
 namespace Bulls_And_Cows
 {
-    public class ForListViewRecords
-    {
-        public int Место { get; set; }
-        public string Имя { get; set; }
-        public string Ходы { get; set; }
-        public string Слово { get; set; }
-        public string Дата { get; set; }
-    }
     /// <summary>
     /// Interaction logic for Records.xaml
     /// </summary>

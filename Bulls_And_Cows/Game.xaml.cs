@@ -17,13 +17,6 @@ namespace Bulls_And_Cows
     /// <summary>
     /// Interaction logic for Game.xaml
     /// </summary>
-    public class ForListView
-    {
-        public int Номер { get; set; }
-        public string Слово { get; set; }
-        public int Быки { get; set; }
-        public int Коровы { get; set; }
-    }
 
     public partial class Game : Window
     {
@@ -57,7 +50,7 @@ namespace Bulls_And_Cows
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Analysis(Letters.hiddenword, wordattempt);
-            ListView_BullsCows.Items.Add(new ForListView { Номер = moves, Слово = wordattempt, Быки = bulls, Коровы = cows });
+            ListView_BullsCows.Items.Add(new ForListViewGame { Номер = moves, Слово = wordattempt, Быки = bulls, Коровы = cows });
             TextBox_WordInput.Text = "";
             TextBox_WordInput.Focus();
         }
